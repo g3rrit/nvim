@@ -22,3 +22,20 @@ endfunction
 
 command Ilvl4 :call SetIlvl4()
 command Ilvl2 :call SetIlvl2()
+
+" COMMENT
+
+function! HsComment()
+  call append(line("."), "--------------------------------------------------------")
+  call append(line("."), "--")
+  call append(line("."), "--------------------------------------------------------")
+endfunction
+
+function! CComment()
+  call append(line("."), "//--------------------------------------------------------")
+  call append(line("."), "// ")
+  call append(line("."), "//--------------------------------------------------------")
+endfunction
+
+command HsC :call HsComment()
+command CC :call CComment()
