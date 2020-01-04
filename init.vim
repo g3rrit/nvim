@@ -2,13 +2,17 @@ call plug#begin()
 " AIRLINE
 Plug 'vim-airline/vim-airline'
 call plug#end()
+
+filetype plugin indent on
   
 syntax on
+set noet ci pi sts=0 sw=4 ts=4
 set relativenumber
-set tabstop=2
-set shiftwidth=2
-set expandtab
-set noautoindent
+
+" set tabstop=2
+" set shiftwidth=2
+" set expandtab
+" set noautoindent
 
 let mapleader = " "
 
